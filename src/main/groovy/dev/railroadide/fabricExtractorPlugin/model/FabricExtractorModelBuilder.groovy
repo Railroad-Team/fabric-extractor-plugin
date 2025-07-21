@@ -1,4 +1,4 @@
-package io.github.railroad.fabricExtractorPlugin.model
+package dev.railroadide.fabricExtractorPlugin.model
 
 import org.gradle.api.Project
 import org.gradle.api.artifacts.ExternalModuleDependency

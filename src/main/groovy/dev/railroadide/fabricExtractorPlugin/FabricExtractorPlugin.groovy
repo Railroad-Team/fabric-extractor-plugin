@@ -1,6 +1,6 @@
-package io.github.railroad.fabricExtractorPlugin
+package dev.railroadide.fabricExtractorPlugin
 
-import io.github.railroad.fabricExtractorPlugin.model.FabricExtractorModelBuilder
+import dev.railroadide.fabricExtractorPlugin.model.FabricExtractorModelBuilder
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.tooling.provider.model.ToolingModelBuilderRegistry

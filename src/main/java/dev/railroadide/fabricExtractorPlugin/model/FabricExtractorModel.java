@@ -1,4 +1,4 @@
-package io.github.railroad.fabricExtractorPlugin.model;
+package dev.railroadide.fabricExtractorPlugin.model;
 
 public interface FabricExtractorModel {
     String minecraftVersion();

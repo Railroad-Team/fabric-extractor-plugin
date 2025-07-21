@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'io.github.railroad'
+group = 'dev.railroadide'
 version = '1.0.0'
 
 java {
@@ -29,8 +29,8 @@ dependencies {
 gradlePlugin {
     plugins {
         fabricExtractorPlugin {
-            id = 'io.github.railroad.fabricExtractorPlugin'
-            implementationClass = 'io.github.railroad.fabricExtractorPlugin.FabricExtractorPlugin'
+            id = 'dev.railroadide.fabricExtractorPlugin'
+            implementationClass = 'dev.railroadide.fabricExtractorPlugin.FabricExtractorPlugin'
         }
     }
 }
@@ -38,5 +38,12 @@ gradlePlugin {
 publishing {
     repositories {
         mavenLocal()
+        maven {
+            url "https://maven.railroadide.dev/releases"
+            credentials {
+                username = System.getenv("RAILROAD_MAVEN_USERNAME")
+                password = System.getenv("RAILROAD_MAVEN_PASSWORD")
+            }
+        }
     }
 }
